@@ -1,0 +1,17 @@
+PROCEDURE InsertionSort(array : [];)
+VAR
+    array : INTEGER;
+    i : INTEGER;
+    j : INTEGER;
+    x : INTEGER := 0;
+BEGIN
+    FOR i FROM 0 TO array.length STEP 1  DO
+        x=array[i];
+        j=i;
+        WHILE (j > 0 && array[j - 1] > x) DO
+            array[j] =array[j - 1]
+            j =j - 1
+            array[j] = x
+        END_WHILE
+    END_FOR
+END
